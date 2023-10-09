@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sunaina's portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://kit.fontawesome.com/0cf771fc45.js" crossorigin="anonymous"></script>
+
+<body>
+    <header id="home">
+        <nav>
+            <div class="left">sunaina's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My name is <span class="purple">sunaina</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Sunainaresume.pdf"> <button class="btn">Download Resume</button></a>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="bg.png">
+            </div>
+
+        </section>
+    </main>
+    <!------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="sunaina.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="subtitle">About me</h2>
+                    <p>Hii, I am sunaina born and bought up in small vilage of haryana.
+                        and i am passionate web developer dedicated to creating stunning websites. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('awards/achievements')">Awards/Achievements</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>C++/Java</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="awards/achievements">
+                        <ul>
+                            <li>Got 2nd position in debate competition at district level</li>
+                            <li>Got bronze medal in relay race at state level</li>
+                            <li>Got 1st position in Hindi and English speech</li>
+                            <li>Sports captain of school for 2 consecutive years</li>
+                            <li>Office bearer in college association</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2019</span><br>Secondary Education from B.K. School (CBSE)</li>
+                            <li><span>2019-2022</span><br>BSc (Non-Medical) from DN College Hisar</li>
+                            <li><span>2022-current</span><br>MCA from Punjab University Chandigarh</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!------------------services------------------------>
+    <div id="services">
+        <div class="container">
+            <h2 class="subtitle">My services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>web design</h3>
+                    <p>"Transforming ideas into stunning websites.
+                        I specialize in creating user-friendly, visually appealing websites that drive results."</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h3>vedio editing</h3>
+                    <p> "Crafting compelling stories through expert video editing.
+                        Enhance your content with professional editing that captivates your audience."</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h3>Mobile App Development</h3>
+                    <p>"Crafting mobile experiences that stand out.
+                        From concept to launch, we bring your app idea to life with precision and creativity."</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------projects---------------------------->
+    <div id="projects">
+        <div class="container">
+            <h2 class="subtitle">My work</h2>
+            <div class="worklist">
+                <div class="work">
+                    <img src="work-1.jpg">
+                    <div class="layer">
+                        <h4>Affil furniture app</h4>
+                        <p>A website created in an effort to raise awareness
+                            about online furniture shoping. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.jpg">
+                    <div class="layer">
+                        <h4>portfolio website</h4>
+                        <p>Developed a personal portfolio website showcasing project ,skills and resume.using HTML, css
+                            and javascipt for
+                            frond end design and interactivity </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.jpg">
+                    <div class="layer">
+                        <h4>Quiz game</h4>
+                        <p>Quiz game is designed to access and improve user's knowledge of two promient language c++ and
+                            java.
+                            c++is used to make this project</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------contact --------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sunainaarora866@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8529248701</p>
+                    <div class="social-icons">
+                        <a href="https:://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https:://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https:://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https:://telegram.com"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="8" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h1>Sunaina's developer portfolio</h1>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">contact me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">contact me</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">contact me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            copyright &#169 sunainaportfolio.com|All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'vedio editor'],
+            typeSpeed: 50,
+        });
+
+
+    </script>
+</body>
+
+</html>
